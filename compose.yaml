@@ -9,16 +9,11 @@ services:
     networks:
       - interop-network
     volumes:
-      - artemis-data:/var/lib/artemis-instance
-      - ./conf/artemis-users.properties:/var/lib/artemis-instance/etc/artemis-users.properties
-      - ./conf/artemis-roles.properties:/var/lib/artemis-instance/etc/artemis-roles.properties
-      - ./conf/broker.xml:/var/lib/artemis-instance/etc/broker.xml
+      - ./conf/artemis-users.properties:/var/lib/artemis/etc/artemis-users.properties
+      - ./conf/artemis-roles.properties:/var/lib/artemis/etc/artemis-roles.properties
+      - ./conf/broker.xml:/var/lib/artemis/etc/broker.xml
 
 networks:
   interop-network:
     name: interop-network
     driver: bridge
-
-volumes:
-  artemis-data:
-    driver: local 
