@@ -271,6 +271,11 @@ under the License.
                <queue name="dispensation.queue"/>
             </anycast>
          </address>
+          <address name="patient.sync.queue">
+            <anycast>
+               <queue name="patient.sync.queue"/>
+            </anycast>
+         </address>
       </addresses>
 
 
