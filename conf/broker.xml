@@ -276,6 +276,11 @@ under the License.
                <queue name="patient.sync.queue"/>
             </anycast>
          </address>
+          <address name="patient.sync.response.queue">
+            <anycast>
+               <queue name="patient.sync.response.queue"/>
+            </anycast>
+         </address>
       </addresses>
 
 
